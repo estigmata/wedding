@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JalaFoundation.Dev23.Wedding.DAL", "src\JalaFoundation.Dev23.Wedding.DAL\JalaFoundation.Dev23.Wedding.DAL.csproj", "{D0513421-B2CA-400B-8E60-5395FA2942F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JalaFoundation.Dev23.Wedding.BL", "src\JalaFoundation.Dev23.Wedding.BL\JalaFoundation.Dev23.Wedding.BL.csproj", "{B693FBCC-25E8-40F3-AEE7-0B7DAF4CC757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JalaFoundation.Dev23.Wedding.API", "src\JalaFoundation.Dev23.Wedding.API\JalaFoundation.Dev23.Wedding.API.csproj", "{3DDAE161-77AC-42BE-ACDE-67F05B7CCB43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JalaFundation.Dev23.Wedding.API.Test", "JalaFundation.Dev23.Wedding.API.Test\JalaFundation.Dev23.Wedding.API.Test.csproj", "{6504FFB4-B3D6-4F61-9DB3-C95E49CF862E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JalaFundation.Dev23.Wedding.BL.Test", "JalaFundation.Dev23.Wedding.BL.Test\JalaFundation.Dev23.Wedding.BL.Test.csproj", "{CBC17B83-8FA9-4FB3-914D-21829A8B4971}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JalaFundation.Dev23.Wedding.DAL.Test", "JalaFundation.Dev23.Wedding.DAL.Test\JalaFundation.Dev23.Wedding.DAL.Test.csproj", "{761561D6-4C00-467E-A55A-C0DF32B8E3E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0513421-B2CA-400B-8E60-5395FA2942F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0513421-B2CA-400B-8E60-5395FA2942F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0513421-B2CA-400B-8E60-5395FA2942F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0513421-B2CA-400B-8E60-5395FA2942F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B693FBCC-25E8-40F3-AEE7-0B7DAF4CC757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B693FBCC-25E8-40F3-AEE7-0B7DAF4CC757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B693FBCC-25E8-40F3-AEE7-0B7DAF4CC757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B693FBCC-25E8-40F3-AEE7-0B7DAF4CC757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DDAE161-77AC-42BE-ACDE-67F05B7CCB43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DDAE161-77AC-42BE-ACDE-67F05B7CCB43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DDAE161-77AC-42BE-ACDE-67F05B7CCB43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DDAE161-77AC-42BE-ACDE-67F05B7CCB43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6504FFB4-B3D6-4F61-9DB3-C95E49CF862E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6504FFB4-B3D6-4F61-9DB3-C95E49CF862E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6504FFB4-B3D6-4F61-9DB3-C95E49CF862E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6504FFB4-B3D6-4F61-9DB3-C95E49CF862E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBC17B83-8FA9-4FB3-914D-21829A8B4971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC17B83-8FA9-4FB3-914D-21829A8B4971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC17B83-8FA9-4FB3-914D-21829A8B4971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC17B83-8FA9-4FB3-914D-21829A8B4971}.Release|Any CPU.Build.0 = Release|Any CPU
+		{761561D6-4C00-467E-A55A-C0DF32B8E3E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{761561D6-4C00-467E-A55A-C0DF32B8E3E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{761561D6-4C00-467E-A55A-C0DF32B8E3E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{761561D6-4C00-467E-A55A-C0DF32B8E3E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D87878F-51B1-414A-BB56-9D0BBDED2F7F}
+	EndGlobalSection
+EndGlobal

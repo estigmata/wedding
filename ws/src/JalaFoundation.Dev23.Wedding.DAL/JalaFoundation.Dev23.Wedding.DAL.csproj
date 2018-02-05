@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0513421-B2CA-400B-8E60-5395FA2942F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JalaFoundation.Dev23.Wedding.DAL</RootNamespace>
+    <AssemblyName>JalaFoundation.Dev23.Wedding.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaces\IAccountsRepository.cs" />
+    <Compile Include="Interfaces\ICouplesRepository.cs" />
+    <Compile Include="Interfaces\IDedicatoryRepository .cs" />
+    <Compile Include="Interfaces\IPersonsRepository.cs" />
+    <Compile Include="Interfaces\IPresentRepository.cs" />
+    <Compile Include="Interfaces\IPresentListRepository.cs" />
+    <Compile Include="Interfaces\IProductsRepository.cs" />
+    <Compile Include="Migrations\201801160423397_InitialMigration.cs" />
+    <Compile Include="Migrations\201801160423397_InitialMigration.Designer.cs">
+      <DependentUpon>201801160423397_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801171910466_CouplePersonAccount.cs" />
+    <Compile Include="Migrations\201801171910466_CouplePersonAccount.Designer.cs">
+      <DependentUpon>201801171910466_CouplePersonAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801180142405_fix.cs" />
+    <Compile Include="Migrations\201801180142405_fix.Designer.cs">
+      <DependentUpon>201801180142405_fix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801180559222_presentList.cs" />
+    <Compile Include="Migrations\201801180559222_presentList.Designer.cs">
+      <DependentUpon>201801180559222_presentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802011607152_Dedicatory.cs" />
+    <Compile Include="Migrations\201802011607152_Dedicatory.Designer.cs">
+      <DependentUpon>201802011607152_Dedicatory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Couple.cs" />
+    <Compile Include="Models\Dedicatory.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\PresentList.cs" />
+    <Compile Include="Models\Present.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AccountsRepository.cs" />
+    <Compile Include="Repositories\CouplesRepository.cs" />
+    <Compile Include="Repositories\DedicatoryRepository.cs" />
+    <Compile Include="Repositories\PersonsRepository.cs" />
+    <Compile Include="Repositories\PresentRepository.cs" />
+    <Compile Include="Repositories\PresentListRepository.cs" />
+    <Compile Include="Repositories\ProductsRepository.cs" />
+    <Compile Include="WeddingContext.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201801160423397_InitialMigration.resx">
+      <DependentUpon>201801160423397_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801171910466_CouplePersonAccount.resx">
+      <DependentUpon>201801171910466_CouplePersonAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801180142405_fix.resx">
+      <DependentUpon>201801180142405_fix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801180559222_presentList.resx">
+      <DependentUpon>201801180559222_presentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802011607152_Dedicatory.resx">
+      <DependentUpon>201802011607152_Dedicatory.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
